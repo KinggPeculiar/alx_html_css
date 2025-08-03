@@ -1,0 +1,281 @@
+:root {
+    --color: #ffffff;
+    --dcolor: #071629;
+    --pro-color: #C271FF;
+    --border: 2px solid black;
+    --x: 2px solid red;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* line-height: 1.5; */
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    font-family: arial;
+    color: var(--color);
+}
+
+body {
+    /* border: 2px solid red; */
+    display:flex;
+    flex-direction: column;
+    flex: auto;
+    width: 100%vw;
+    max-width: 1440px;
+}    
+.background-wrapper {
+    background-image: url(images/Object.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: center;
+    max-width: 100%vw;
+    max-height: 100%vh;
+    padding: 0;
+    /* overflow: auto; */
+}
+
+header {
+    /* border: var(--x); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+nav {
+    /* border: var(--x); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    vertical-align: right;
+}
+
+nav li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--color);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+main, section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main_intro {
+    /* border: var(--x); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.intro_call_out {
+    /* border: var(--x); */
+    display: flex;
+    font-size: 110px;
+    font-weight: bolder;
+    padding: 10px;
+    margin-top: 135px;
+}
+
+.intro_intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: auto;
+    margin: 20px;
+}
+
+.intro_intro p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.reg-button {
+    background: var(--pro-color);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color);
+    border: 0;
+    border-radius: 24px;
+    box-shadow: 4px 4px 12px rgb(62, 60, 60);    
+}
+
+.pros-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding:0;
+    line-height: 1.5;
+}
+
+.pro_call {
+    margin-top: 150px;
+}
+.header_speech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 0;
+    line-height: 1.5;
+    border: 0;
+    width: 100%;
+    /* background: red; */
+}
+
+.learn {
+    color: var(--pro-color);
+    font-weight: bolder;
+}
+
+.pros,
+.tutorials_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 136px;
+}
+
+@media (max-width: 768px) {
+    .pros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    
+}
+
+.pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 237px;
+}
+
+.pro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.pro h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    /* color: red; */
+}
+
+.pro p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.part_1_testimonials {
+    background-color: var(--pro-color);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 292px;
+}
+
+.testimonial {
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.avater {
+    width: 140px;
+    height: 140px;
+}
+
+blockquote {
+    margin-bottom: 15px;
+}
+
+.person_name {
+    font-weight: bold;
+}
+
+.job_title {
+    font-style: italic;
+}
+
+.part_2_tutorials,
+.tutorials {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorials_section {
+    border: var(--x);
+}
+
+.tutorials {
+    width: 255;
+    height: 335;
+}
+footer {
+    background: #071629;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 249px;
+    width: 100%vw;
+}
+@media (min-height: 249px) {
+    footer {
+        height: 100%;
+    }
+}
+
+.footer-set {
+    display: flex;
+
+}

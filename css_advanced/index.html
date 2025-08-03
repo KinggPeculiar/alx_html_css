@@ -4,188 +4,203 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>Advanced HTML</title>
-        <style href="styles.css" rel="stylesheet"></style>
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/styles.css">
+         <!-- <link rel="stylesheet" href="assets/style.css"> -->
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="/">
-                    <img src="CSS-Advanced/logo.png" alt="logo">
-                </a>
-                <ul>
-                    <li><a href="courses.html">COURSES</a></li>
-                    <li><a href="pricing.html">PRICING</a></li>
-                    <li><a href="login.html">LOGIN</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="main_part">
-                <div>
-                    <h1>Get schooled</h1>
-                    <div>
-                        <p>SMILES</p>
-                        <p>GRIN</p>
-                        <p>LAUGH</p>
-                    </div>
-                    <button type="button" title="Register" href="proj_x.html">REGISTER FOR FREE</button>
-                </div>
-                <div>
-                    <h1>Learn from the pros</h1>
-                    <div class="pros">
-                        <div class="pro1">
-                            <img class="avater" src="CSS-Advanced/1.png" alt="Phillip Massey">
-                            <h2>Phillip Massey</h2>
-                            <p>« Smile of the year » 2018 - 2019</p>
+        <div class="background-wrapper">
+            <div class="content-wrapper">
+                <header>
+                    <nav>
+                        <a href="/">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a>
+                        <ul>
+                            <li><a href="courses.html">COURSES</a></li>
+                            <li><a href="pricing.html">PRICING</a></li>
+                            <li><a href="login.html">LOGIN</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main>
+                    <section>
+                        <div class="main_intro">
+                            <div class="intro_call_out">
+                                <h1>Get schooled</h1>
+                            </div>
+                            <div class="intro_intro">
+                                <p>SMILES</p>
+                                <p>GRIN</p>
+                                <p>LAUGH</p>
+                            </div>
+                            <button class="reg-button" type="button" title="Register" href="proj_x.html">REGISTER FOR FREE</button>
                         </div>
-                        <div class="pro2">
-                            <img class="avater" src="CSS-Advanced/3.png" alt="Nannie Lawrence">
-                            <h2>Nannie Lawrence</h2>
-                            <p>Best « little smile » 2017</p>
+                        <div class="pros_banner">
+                            <div class="pro_call">
+                                <h1 class="header_speech"><span class="learn">Learn</span> &nbsp;from the pros</h1>
+      
+                            </div>
+                            <div class="pros">
+                                <div class="pro">
+                                    <img class="avater" src="assets/images/1.png" alt="Phillip Massey">
+                                    <h2>Phillip Massey</h2>
+                                    <p>« Smile of the year » 2018 - 2019</p>
+                                </div>
+                                <div class="pro">
+                                    <img class="avater" src="assets/images/3.png" alt="Nannie Lawrence">
+                                    <h2>Nannie Lawrence</h2>
+                                    <p>Best « little smile » 2017</p>
+                                </div>
+                                <div class="pro">
+                                    <img class="avater" src="assets/images/2.png" alt="Bruce Walters">
+                                    <h2>Bruce Walters</h2>
+                                    <p>Best « Friend Smile » live performance 2019</p>
+                                </div>
+                                <div class="pro">
+                                    <img class="avater" src="assets/images/4.png" alt="Henry Hughes">
+                                    <h2>Henry Hughes</h2>
+                                    <p>« 24h smiles » winner 2016 - 2019</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="pro3">
-                            <img class="avater" src="CSS-Advanced/2.png" alt="Bruce Walters">
-                            <h2>Bruce Walters</h2>
-                            <p>Best « Friend Smile » live performance 2019</p>
+                    </section>
+                    <section class="part_1_testimonials">
+                        <div class="testimonial_img">
+                            <img class="avater" src="assets/images/5.png" alt="a happy man">
                         </div>
-                        <div class="pro4">
-                            <img class="avater" src="CSS-Advanced/4.png" alt="Henry Hughes">
-                            <h2>Henry Hughes</h2>
-                            <p>« 24h smiles » winner 2016 - 2019</p>
+                        <div class="testimonial">
+                            <blockquote>« Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!</blockquote>
+                            <p><span class="person_name">Person Name</span></p>
+                            <p class="job_title">weather presenter</p>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="part_1_testimonials">
-                <div>
-                    <img class="avater" src="CSS-Advanced/5.png" alt="a happy man">
-                </div>
-                <div>
-                    <blockquote>« Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!</blockquote>
-                    <p><strong>Person Name</strong></p>
-                    <p>weather presenter</p>
-                </div>
-            </section>
-            <section class="part_2_tutorials">
-                <h1>Most popular tutorials</h1>
-                <div>
-                    <div class="tutorials">
-                        <img src="CSS-Advanced/9.png" alt="tutporial 1">
-                        <h2>Diagonal Smile</h2>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                        <div class="comment_block">
-                            <img class="pro_comment_image" src="CSS-Advanced/1.png" alt="commenter image">
-                            <h3>Phillip Massey</h3>
+                    </section>
+                    <section class="part_2_tutorials">
+                        <h1 class="header_speech">Most <span class="learn">popular</span> tutorials</h1>
+                        <div class="tutorials_section">
+                            <div class="tutorials">
+                                <img src="assets/images/9.png" alt="tutporial 1">
+                                <h2>Diagonal Smile</h2>
+                                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="comment_block">
+                                    <img class="pro_comment_image" src="assets/images/1.png" alt="commenter image">
+                                    <h3>Phillip Massey</h3>
+                                </div>
+                                <div class="ratings_block">
+                                    <img class="star_rating" src="assets/images/rating.png" alt="star ratings">
+                                    <p>8 min</p>
+                                </div>
+                            </div>
+                            <div class="tutorials">
+                                <img src="assets/images/7.png" alt="tutporial 2">
+                                <h2>Sad Smile</h2>
+                                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="comment_block">
+                                    <img class="pro_comment_image" src="assets/images/1.png" alt="commenter image">
+                                    <h3>Phillip Massey</h3>
+                                </div>
+                                <div class="ratings_block">
+                                    <img class="star_rating" src="assets/images/rating.png" alt="star ratings">
+                                    <p>8 min</p>
+                                </div>
+                            </div>
+                            <div class="tutorials">
+                                <img src="assets/images/8.png" alt="tutporial 3">
+                                <h2>Natural Smile</h2>
+                                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="comment_block">
+                                    <img class="pro_comment_image" src="assets/images/1.png" alt="commenter image">
+                                    <h3>Phillip Massey</h3>
+                                </div>
+                                <div class="ratings_block">
+                                    <img class="star_rating" src="assets/images/rating.png" alt="star ratings">
+                                    <p>8 min</p>
+                                </div>
+                            </div>
+                            <div class="tutorials">
+                                <img src="assets/images/6.png" alt="tutporial 4">
+                                <h2>Happy Smile</h2>
+                                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="comment_block">
+                                    <img class="pro_comment_image" src="assets/images/1.png" alt="commenter image">
+                                    <h3>Phillip Massey</h3>
+                                </div>
+                                <div class="ratings_block">
+                                    <img class="star_rating" src="assets/images/rating.png" alt="star ratings">
+                                    <p>8 min</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ratings_block">
-                            <img class="star_rating" src="CSS-Advanced/rating.png" alt="star ratings">
-                            <p>8 min</p>
+                    </section>
+                    <section class="part_3_free_membership">
+                        <h1>Free Membership</h1>
+                        <div class="free_membership">
+                            <div class="dot">
+                                <img src="assets/images/smile.png" alt="smile image">
+                                <h2>Lorem ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="dot">
+                                <img src="assets/images/smile.png" alt="smile image">
+                                <h2>Lorem ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="dot">
+                                <img src="assets/images/smile.png" alt="smile image">
+                                <h2>Lorem ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="dot">
+                                <img src="assets/images/smile.png" alt="smile image">
+                                <h2>Lorem ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tutorials">
-                        <img src="CSS-Advanced/7.png" alt="tutporial 2">
-                        <h2>Sad Smile</h2>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                        <div class="comment_block">
-                            <img class="pro_comment_image" src="CSS-Advanced/1.png" alt="commenter image">
-                            <h3>Phillip Massey</h3>
-                        </div>
-                        <div class="ratings_block">
-                            <img class="star_rating" src="CSS-Advanced/rating.png" alt="star ratings">
-                            <p>8 min</p>
-                        </div>
-                    </div>
-                    <div class="tutorials">
-                        <img src="CSS-Advanced/8.png" alt="tutporial 3">
-                        <h2>Natural Smile</h2>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                        <div class="comment_block">
-                            <img class="pro_comment_image" src="CSS-Advanced/1.png" alt="commenter image">
-                            <h3>Phillip Massey</h3>
-                        </div>
-                        <div class="ratings_block">
-                            <img class="star_rating" src="CSS-Advanced/rating.png" alt="star ratings">
-                            <p>8 min</p>
-                        </div>
-                    </div>
-                    <div class="tutorials">
-                        <img src="CSS-Advanced/6.png" alt="tutporial 4">
-                        <h2>Happy Smile</h2>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                        <div class="comment_block">
-                            <img class="pro_comment_image" src="CSS-Advanced/1.png" alt="commenter image">
-                            <h3>Phillip Massey</h3>
-                        </div>
-                        <div class="ratings_block">
-                            <img class="star_rating" src="CSS-Advanced/rating.png" alt="star ratings">
-                            <p>8 min</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="part_3_free_membership">
-                <h1>Free Membership</h1>
-                <div class="free_membership">
-                    <div class="dot">
-                        <img src="CSS-Advanced/smile.png" alt="smile image">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="dot">
-                        <img src="CSS-Advanced/smile.png" alt="smile image">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="dot">
-                        <img src="CSS-Advanced/smile.png" alt="smile image">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="dot">
-                        <img src="CSS-Advanced/smile.png" alt="smile image">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <button type="button" title="Register" alt="register for free">REGISTER FOR FREE</button>
-            </section>
-            <section class="faq">
-                <div>
-                    <div>
+                        <button type="button" title="Register" alt="register for free">REGISTER FOR FREE</button>
+                    </section>
+                    <section class="faq">
                         <div>
-                            <h1>Title</h1>
-                            <p>Text</p>
+                            <div>
+                                <div>
+                                    <h1>Title</h1>
+                                    <p>Text</p>
+                                </div>
+                                <div>
+                                    <h1>Title</h1>
+                                    <p>Text></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <h1>Title</h1>
+                                    <p>Text</p>
+                                </div>
+                                <div>
+                                    <h1>Title</h1>
+                                    <p>Text></p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h1>Title</h1>
-                            <p>Text></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h1>Title</h1>
-                            <p>Text</p>
-                        </div>
-                        <div>
-                            <h1>Title</h1>
-                            <p>Text></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <div>
-                    <img src="x.png" alt="image">
-                    <div>
-                        <a href="/" target="_blank"><img src="x.png" alt="images"></a>
-                        <a href="/" target="_blank"><img src="x.png" alt="images"></a>
-                        <a href="/" target="_blank"><img src="x.png" alt="images"></a>
-                    </div>
-                    <p>Text</p>
-                </div>
+                    </section>
+                </main>
             </div>
-        </footer>
+        </div>
+        <div class="footer-background">
+            <footer>
+                <div>
+                    <div>
+                        <div class="footer-set">
+                            <img src="assets/images/logo.png" alt="image">
+                            <div>
+                                <a href="/" target="_blank"><img src="x.png" alt="images"></a>
+                                <a href="/" target="_blank"><img src="x.png" alt="images"></a>
+                                <a href="/" target="_blank"><img src="x.png" alt="images"></a>
+                            </div>
+                        </div>
+                        <p>Text</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
