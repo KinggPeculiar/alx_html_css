@@ -1,0 +1,35 @@
+body, div, h1, h2, h3, p, a, img, nav, section {
+    background: white;
+    color:black;
+    font-family: 'Source Sans Pro';
+    line-height: 1;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_part {
+    display: block;
+    text-align: center;   
+}
+
+.main_intro {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.intro_intro {
+    display: inline;
+}
+
