@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* line-height: 1.5; */
+  line-height: 1.5;
 }
 
 html, body {
@@ -115,7 +115,8 @@ main, section {
     margin: 20px;
 }
 
-.intro_intro p {
+.intro_intro p,
+.tutorials h2 {
     font-size: 16px;
     font-weight: bold;
 }
@@ -148,6 +149,7 @@ main, section {
     margin-top: 150px;
 }
 .header_speech {
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,8 +167,7 @@ main, section {
     font-weight: bolder;
 }
 
-.pros,
-.tutorials_section {
+.pros {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,8 +242,7 @@ blockquote {
     font-style: italic;
 }
 
-.part_2_tutorials,
-.tutorials {
+.part_2_tutorials {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -251,13 +251,43 @@ blockquote {
 }
 
 .tutorials_section {
-    border: var(--x);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .tutorials {
+    background-color: #ffffff;
+    display: block;
     width: 255;
     height: 335;
+    color: black;
+    line-height: 1.5;
 }
+
+.tutorials img {
+    width: 255;
+    height: 154;
+}
+
+.comment_block {
+    display: flex;
+}
+
+.pro_comment_image {
+    width: 30px;
+    height: 30px;
+}
+
+.ratings_block {
+    display: flex;
+}
+
+.part_3_free_membership {
+    background-color: var(--dcolor);
+}
+
 footer {
     background: #071629;
     background-size: auto;
