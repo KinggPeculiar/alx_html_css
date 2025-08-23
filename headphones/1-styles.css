@@ -18,7 +18,8 @@ html, body {
 }
 
 header, .nav_bar, .hero_content, .main_section, .main_content, 
-.sub_content, .what-we-do-section {
+.sub_content, .what-we-do-section, .section-header, 
+.services, .service, .work-menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,11 +193,49 @@ main {
 }
 
 .what-we-do-section {
-  background: red;
+  /* background: red; */
   flex-direction: column;
-  height: 694px;
+  height: 477px;
+  color: var(--color2);
+}
+
+.section-header {
+  /* background: red; */
+  flex-direction: column;
+  height: 50%;
 }
 
 .what-we-do-section-heading {
-  
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.work-menu {
+  flex-direction: column;
+}
+
+.services {
+  height: 50%;
+  width: 100%;
+  gap: 30px;
+}
+
+.service {
+  flex-direction: column;
+  width: 207px;
+  height: 180px;
+}
+
+.service span {
+  font-size: 65px;
+  color: #e74c3c;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.service h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
