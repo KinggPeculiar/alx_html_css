@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="1-styles.css">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com"> -->
+    </head>
+    <body>
+        <header>
+           <nav class="nav_bar">
+                <a href="#" class="nav_branding">
+                    <img src="images/logo_headphones.png" alt="Logo" class="nav_logo">
+                </a>
+
+                <ul class="nav_menu">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">what we do</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">our results</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">contact us</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+           </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero_content">
+                    <div class="main_section">
+                        <div class="main_content">
+                            <h1 class="main_heading">Lorem ipsum dolor sit, amet consectetur adipisicing</h1>
+                            <h3 class="sub_heading">Lorem, ipsum dolor sit amet consectetur adipisicing</h3>
+                        </div>
+                        <button class="call_to_action" type="button" title="Call_to_action" href="/">CALL TO ACTION</button>
+                    </div>
+                    <div class="sub_content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dicta illum accusantium et maiores</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur delectus facere expedita.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, aut.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="what-we-do-section">
+                <h1>What we do...</h1>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Recusandae dicta illum accusantium et maiores</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Sed pariatur delectus facere expedita</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Aspernatur aut</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Nesciunt</p>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <div>
+                            <img src="" alt="">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img src="" alt="">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img src="" alt="">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img src="" alt="">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img src="" alt="">
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>consectetur adipiscing elit.</p>
+                    </div>                    
+                </div>
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav_menu");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            })
+
+            document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }))
+        </script>
+    </body>
+</html>
