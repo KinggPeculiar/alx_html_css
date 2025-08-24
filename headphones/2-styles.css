@@ -12,14 +12,14 @@
 html, body {
   color: var(--color);
   font-family: sans-serif;
-  height: 100vh;
   scroll-behavior: smooth;
   line-height: 1.5;
 }
 
 header, .nav_bar, .hero_content, .main_section, .main_content, 
 .sub_content, .what-we-do-section, .section-header, 
-.services, .service, .work-menu {
+.services, .service, .work-menu, .our-results-section,
+.results-stats, .stats, .number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,6 +132,9 @@ main {
   flex-direction: column;
   justify-content: center;
   width: inherit;
+  text-align: center;
+  position: relative;
+  z-index: 1;  
 }
 /* Herro Section */
 .hero {
@@ -140,8 +143,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
-  position: relative;
-  z-index: 1;
 }
 
 .hero_content {
@@ -192,23 +193,23 @@ main {
   flex-direction: column;
 }
 
+/* WHAT WE DO SECTION */
 .what-we-do-section {
-  /* background: red; */
   flex-direction: column;
-  height: 477px;
   color: var(--color2);
+  padding: 50px;
+  font-size: 1rem;  
 }
 
 .section-header {
-  /* background: red; */
   flex-direction: column;
-  height: 50%;
+  padding: 20px;
 }
 
 .what-we-do-section-heading {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  padding: 20px;
 }
 
 .work-menu {
@@ -216,15 +217,38 @@ main {
 }
 
 .services {
-  height: 50%;
-  width: 100%;
-  gap: 30px;
+  margin: 20px;
+  max-width: 1000px;
+  gap: 40px;
+  transition: 0.2s;
 }
 
+@media(max-width:768px) {
+  .what-we-do-section {
+    height: 100%;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    gap: 40px;
+  }
+}
 .service {
   flex-direction: column;
   width: 207px;
   height: 180px;
+  cursor: zoom-in;
+  transition: 0.5s ease;
+}
+
+.service:hover {
+  background: rgb(207, 206, 206);
+  padding: 2px;
+  border-radius: 22px;
+  transform: scale(1.1);
 }
 
 .service span {
@@ -238,4 +262,70 @@ main {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+/* OUR RESULTS SECTION */
+.our-results-section-background {
+  min-height: 100vh;
+  background: url('images/headphones_hero_2.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.our-results-section {
+  flex-direction: column;
+  padding: 50px;
+  margin: 30px;
+}
+
+.word-of-truth {
+  font-size: 1rem;
+}
+
+.word-of-truth h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.results-stats {
+  gap: 60px;
+  max-width: 1000px;
+  margin: 70px;
+  text-align: center;
+}
+
+.stats {
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  background: var(--color3); 
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem; /* optional: add inner spacing */
+}
+
+/* PENTAGON CONTAINER */
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px;  
+}
+
+.stats p {
+  font-size: 0.6rem;
+}
+
+@media(max-width:768px) {
+
+  .our-results-section-background {
+    background-size: cover;
+  }
+
+  .results-stats {
+    flex-direction: column;
+    height: 100vh;
+  }
 }
